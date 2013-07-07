@@ -13,7 +13,6 @@ public class Calculator {
     @GET
     @Path("add")
     public String add(@QueryParam("a")int a, @QueryParam("b")int b){
-        int retvalue = a + b;
-        return retvalue.ToString();
+        return String.valueOf(a + b);
     }
 }
