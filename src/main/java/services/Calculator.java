@@ -22,5 +22,16 @@ public class Calculator {
         return String.valueOf(a - b);
     }
 
+    @GET
+    @Path("multiply")
+    public String multiply(@QueryParam("a")int a, @QueryParam("b")int b){
+        return String.valueOf(a * b);
+    }
+
+    @GET
+    @Path("divide")
+    public String divide(@QueryParam("a")int a, @QueryParam("b")int b){
+        return String.valueOf(a / b);
+    }
 
 }

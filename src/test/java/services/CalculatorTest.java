@@ -20,4 +20,16 @@ public class CalculatorTest {
         String actual = sut.subtract(5, 3);
         assertThat(actual, is("2"));
     }
+
+    @Test
+    public void testMultiply() {
+        String actual = sut.multiply(5, 3);
+        assertThat(actual, is("15"));
+    }
+
+    @Test
+    public void testDivide() {
+        String actual = sut.divide(10, 2);
+        assertThat(actual, is("5"));
+    }
 }
