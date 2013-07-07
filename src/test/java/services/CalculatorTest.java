@@ -31,5 +31,11 @@ public class CalculatorTest {
     public void testDivide() {
         String actual = sut.divide(10, 2);
         assertThat(actual, is("5"));
+
+	actual = sut.divide(0, 1);
+        assertThat(actual, is("0"));
+
+	actual = sut.divide(1, 0);
+        assertThat(actual, is("0œZƒGƒ‰["));
     }
 }
