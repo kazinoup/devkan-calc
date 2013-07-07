@@ -18,7 +18,7 @@ public class Calculator {
 
     @GET
     @Path("subtract")
-    public String add(@QueryParam("a")int a, @QueryParam("b")int b){
+    public String subtract(@QueryParam("a")int a, @QueryParam("b")int b){
         return String.valueOf(a - b);
     }
 
