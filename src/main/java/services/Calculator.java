@@ -31,15 +31,12 @@ public class Calculator {
     @GET
     @Path("divide")
     public String divide(@QueryParam("a")int a, @QueryParam("b")int b){
-	return String.valueOf(a / b);
-/*
 	try
 	{
             return String.valueOf(a / b);
 	} catch (ArithmeticException e) {
-            return "0除算エラー"; 
+            return "0 divide error"; 
 　　　　}
-*/	
     }
 
 }

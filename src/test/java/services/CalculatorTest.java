@@ -36,6 +36,6 @@ public class CalculatorTest {
         assertThat(actual, is("0"));
 
 	actual = sut.divide(1, 0);
-        assertThat(actual, is("0œZƒGƒ‰["));
+        assertThat(actual, is("0 divide error"));
     }
 }
