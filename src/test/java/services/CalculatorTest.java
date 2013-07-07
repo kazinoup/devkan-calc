@@ -7,10 +7,17 @@ import static org.junit.Assert.assertThat;
 
 public class CalculatorTest {
 
+    Calculator sut = new Calculator();
+
     @Test
     public void testAdd() {
-        Calculator sut = new Calculator();
         String actual = sut.add(1, 1);
+        assertThat(actual, is("2"));
+    }
+
+    @Test
+    public void testSubtract() {
+        String actual = sut.subtract(5, 3);
         assertThat(actual, is("2"));
     }
 }
